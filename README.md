@@ -11,11 +11,11 @@ Ein Getränkeautomat, der aussieht, wie eine Zapfsäule aus den 50er'n
 - IN2 -> D10
 - IN3 -> D9
 - IN4 -> D8
-- + -> 5V
-- - -> GND
+- \+ -> 5V
+- \- -> GND
 2. Drehwinkelgeber anschliessen:
 - GND -> GND
-- + -> 5V
+- \+ -> 5V
 - SW -> D7
 - DT -> D5
 - CLK -> D6
