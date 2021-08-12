@@ -4,6 +4,7 @@ Die Software für den Technischen teil eines Getränke-Zapfautomat's
 # Material
 - Motor mit ULN2003-Controller
 - Drehwinkelgeber
+- Arduino
 
 # Aufbau
 1. ULN2003 pins Anschliessen:
@@ -13,6 +14,7 @@ Die Software für den Technischen teil eines Getränke-Zapfautomat's
 - IN4 -> D8
 - \+ -> 5V
 - \- -> GND
+
 2. Drehwinkelgeber anschliessen:
 - GND -> GND
 - \+ -> 5V
