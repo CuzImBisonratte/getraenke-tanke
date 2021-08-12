@@ -102,50 +102,50 @@ void loop() {
         if(counter==8){
             counter=2;
         }
+    }
+    //Wenn der Drehwinkelgeber gedrückt wird
+    if(digitalRead(rotaryPress)==LOW){ 
 
-        //Wenn der Drehwinkelgeber gedrückt wird
-        if(digitalRead(rotaryPress)==LOW){ 
-
-            //Getränk ausrechnen
-            getraenk = counter/2;
+        //Getränk ausrechnen
+        getraenk = counter/2;
             
-            //Motor immer passend drehen
-            if(getraenk==1){
-                if(altGetraenk==2){
+        //Motor immer passend drehen
+        if(getraenk==1){
+            if(altGetraenk==2){
                     
-                    //Drehen um 2/3 drehen
-                    controlmotor(341);
-                }
-                if(altGetraenk==3){
-                    
-                    //Drehen um 1/3 drehen
-                    controlmotor(170);
-                }
+                //Drehen um 2/3 drehen
+                controlmotor(341);
             }
-            if(getraenk==2){
-                if(altGetraenk==1){
-                    
-                    //Drehen um 1/3 drehen
-                    controlmotor(170);
-                }
-                if(altGetraenk==3){
-                    
-                    //Drehen um 2/3 drehen
-                    controlmotor(341);
-                }
+            if(altGetraenk==3){
+                
+                //Drehen um 1/3 drehen
+                controlmotor(170);
             }
-            if(getraenk==3){
-                if(altGetraenk==1){
-                    
-                    //Drehen um 2/3 drehen
-                    controlmotor(341);
-                }
-                if(altGetraenk==2){
-                    
-                    //Drehen um 1/3 drehen
-                    controlmotor(170);
-                }
+        }
+        if(getraenk==2){
+            if(altGetraenk==1){
+                
+                //Drehen um 1/3 drehen
+                controlmotor(170);
             }
+            if(altGetraenk==3){
+                
+                //Drehen um 2/3 drehen
+                controlmotor(341);
+            }
+        }
+        if(getraenk==3){
+            if(altGetraenk==1){
+                
+                //Drehen um 2/3 drehen
+                controlmotor(341);
+            }
+            if(altGetraenk==2){
+                
+                //Drehen um 1/3 drehen
+                controlmotor(170);
+            }
+        }
 
         //Stromzufuhr trennen, damit nichts passiert
         turnMotor(0,0,0,0);
