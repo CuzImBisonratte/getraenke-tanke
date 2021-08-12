@@ -1,4 +1,4 @@
-# getraenke-tanke
+# getränke-tanke
 Die Software für den Technischen teil eines Getränke-Zapfautomat's
 
 # Material
