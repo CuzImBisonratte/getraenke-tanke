@@ -1,6 +1,9 @@
 # getränke-tanke
 Die Software für den Technischen teil eines Getränke-Zapfautomat's
 
+# Wichtig
+- Die Pumpensteuerung und Getränkeauswahl sind noch nicht Fertiggestellt
+
 # Material
 - Motor mit ULN2003-Controller
 - Drehwinkelgeber
