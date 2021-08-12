@@ -1,3 +1,7 @@
+//Getränketanke-Projekt von Findus_Friedrich und CuzImBisonbisonratte
+//https://bit.ly/getränketanke
+//Code verwendbar nach der MIT-License (https://bit.ly/getränketankelizenz)
+
 //Definieren aller Motor-Pins an die die Rohdaten gesendet werden
 int MotorPinA = 8;
 int MotorPinB = 9;
@@ -24,15 +28,14 @@ int rotaryState;
 int rotaryLastState;
 
 void setup() { 
-  //
+  //Einstellen aller Pin-modi
   pinMode(rotaryA,INPUT);
   pinMode(rotaryB,INPUT);
   pinMode(rotaryPress,INPUT_PULLUP);
   pinMode(MotorPinA,OUTPUT);
   pinMode(MotorPinB,OUTPUT);
   pinMode(MotorPinC,OUTPUT);
-  pinMode(MotorPinD,OUTPUT);  
-  Serial.begin (9600);
+  pinMode(MotorPinD,OUTPUT);
   rotaryLastState = digitalRead(rotaryA);   
 } 
 
@@ -64,7 +67,7 @@ void onestep(){
     delay(5);
 }
 
-//Der Loop, damit der Motor genau 1/3 weiterdreht
+//Der Loop, damit der Motor genau [STEPS] Schritte weiterdreht
 void controlmotor(int steps){
     Durchlaeufe=steps;
     while(Durchlaeufe>=0){
