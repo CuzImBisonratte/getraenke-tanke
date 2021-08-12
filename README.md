@@ -1,5 +1,5 @@
 # getraenke-tanke
-Ein Getränkeautomat, der aussieht, wie eine Zapfsäule aus den 50er'n
+Die Software für den Technischen teil eines Getränke-Zapfautomat's
 
 # Material
 - Motor mit ULN2003-Controller
