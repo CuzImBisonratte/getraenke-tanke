@@ -6,7 +6,7 @@ Die Software für den Technischen teil eines Getränke-Zapfautomat's
 - Drehwinkelgeber
 - Arduino
 
-# Aufbau
+# Nachbau
 1. ULN2003 pins Anschliessen:
 - IN1 -> D11
 - IN2 -> D10
@@ -21,3 +21,5 @@ Die Software für den Technischen teil eines Getränke-Zapfautomat's
 - SW -> D7
 - DT -> D5
 - CLK -> D6
+
+3. Arduino mit der Software bespielen
